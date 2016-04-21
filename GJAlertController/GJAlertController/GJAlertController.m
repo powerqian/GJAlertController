@@ -61,8 +61,11 @@ static GJAlertController *defaultController;
     if (GJAlertControllerStyleAlert == defaultController->_style) {
         [defaultController->_gjAlertView show];
     } else if (GJAlertControllerStyleActionSheet == defaultController->_style) {
-        if (aView) {
+        // Fixed the issue in iOS 7 mentioned here: http://stackoverflow.com/questions/18932544/nsinvalidargumentexception-reason-sheet-can-not-be-presented-because-the-vi
+        if (aView.window) {
             [defaultController->_gjActionSheet showInView:aView];
+        } else {
+            [defaultController->_gjActionSheet showInView:[UIApplication sharedApplication].keyWindow];
         }
     }
 }
