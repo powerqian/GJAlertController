@@ -12,7 +12,7 @@ Drag and drop the files in GJAlertController folder to the project.
 
 #### CocoaPods
 
-`pod 'GJAlertController, :git => 'https://github.com/gowalla/AFNetworking.git'`
+`pod 'GJAlertController, :git => 'https://github.com/powerqian/GJAlertController.git'`
 
 ### Usage：directly use `UIAlerController` regardless of the iOS version
 
