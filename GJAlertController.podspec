@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "erlianhzi" => "guoxiaoliang850417@163.com" }
 
-  s.source       = { :git => "https://github.com/powerqian/GJAlertController.git" }
+  s.source       = { :git => "https://github.com/powerqian/GJAlertController.git", :tag => "1.0.1" }
   s.source_files = "GJAlertController/GJAlertController/*.{h,m}"
 
 
